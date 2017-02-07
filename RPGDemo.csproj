@@ -78,8 +78,8 @@
     <Compile Include="Assets\script\uiControl\CreateMapAction.cs" />
     <Compile Include="Assets\script\uiControl\EditorMapMenuCtrl.cs" />
     <Compile Include="Assets\script\uiControl\EditorTopMenuCtrl.cs" />
+    <Compile Include="Assets\script\uiControl\FloatCtrl.cs" />
     <Compile Include="Assets\script\uiControl\MainUICtrl.cs" />
-    <Compile Include="Assets\script\uiControl\MenusCtrl.cs" />
     <Compile Include="Assets\script\uiControl\NewMapWinCtrl.cs" />
     <Compile Include="Assets\script\uiControl\UIDrag.cs" />
     <Compile Include="Assets\script\uiControl\Validation.cs" />

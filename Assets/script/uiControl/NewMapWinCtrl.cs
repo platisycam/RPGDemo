@@ -21,6 +21,7 @@ public class NewMapWinCtrl : MonoBehaviour {
     }
 
     public void CommitWin() {
+        GameObject.Find("Canvas").GetComponent<FloatCtrl>().ShowEditorMenu();
         GameObject.Find("UnityObject").GetComponent<CreateMapAction>().CreateMap(LengthInput.text, HighthInput.text);
         this.gameObject.SetActive(false);
     }

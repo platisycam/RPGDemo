@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EditorMapMenuCtrl : MonoBehaviour {
     bool isExtMenu = false;
-	// Use this for initialization
-	void Start () {
+    public GameObject subMenu;
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -18,12 +20,21 @@ public class EditorMapMenuCtrl : MonoBehaviour {
     {
         if (isExtMenu)
         {
+            subMenu.SetActive(false);
             isExtMenu = false;
         }
         else
         {
+            subMenu.SetActive(true);
             isExtMenu = true;
         }
 
+    }
+
+    //返回顶层菜单
+    public void ReturnToTopMenu()
+    {
+        GameObject.Find("Canvas").GetComponent<FloatCtrl>().ShowTopMenu();
+        GameObject.Find("Canvas").GetComponent<FloatCtrl>().BtTopMenu.GetComponent<EditorTopMenuCtrl>().ExtendMenu();
     }
 }

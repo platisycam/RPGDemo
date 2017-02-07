@@ -19,12 +19,10 @@ public class EditorTopMenuCtrl : MonoBehaviour {
 
     public void ExtendMenu() {
         if (isExtMenu1){
-            //transform.Find("Menu1").gameObject.SetActive(false);
             subMenu.SetActive(false);
             isExtMenu1 = false;
         }
         else {
-            // transform.Find("Menu1").gameObject.SetActive(true);
             subMenu.SetActive(true);
             isExtMenu1 = true;
         }
