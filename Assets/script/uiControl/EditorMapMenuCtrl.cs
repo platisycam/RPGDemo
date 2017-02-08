@@ -37,4 +37,7 @@ public class EditorMapMenuCtrl : MonoBehaviour {
         GameObject.Find("Canvas").GetComponent<FloatCtrl>().ShowTopMenu();
         GameObject.Find("Canvas").GetComponent<FloatCtrl>().BtTopMenu.GetComponent<EditorTopMenuCtrl>().ExtendMenu();
     }
+
+    public void ExtLandItemShow() {
+    }
 }

@@ -75,6 +75,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\script\Data\MapItemData.cs" />
+    <Compile Include="Assets\script\Data\MapProterty.cs" />
+    <Compile Include="Assets\script\SysControl\ViewCtrl.cs" />
     <Compile Include="Assets\script\uiControl\CreateMapAction.cs" />
     <Compile Include="Assets\script\uiControl\EditorMapMenuCtrl.cs" />
     <Compile Include="Assets\script\uiControl\EditorTopMenuCtrl.cs" />
